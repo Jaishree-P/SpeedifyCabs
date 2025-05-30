@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hourly Ride Booking</title>
+  
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #fafaf9, #fffffd);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .booking-form {
+      background: #fff;
+      padding: 30px 40px;
+      border-radius: 15px;
+      box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 450px;
+    }
+
+    .booking-form h2 {
+      margin-bottom: 20px;
+      color: #333;
+      text-align: center;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+      position: relative;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+      color: #555;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      outline: none;
+      transition: 0.3s;
+    }
+
+    .form-group input:focus {
+      border-color: #0954aa;
+    }
+
+    button[type="submit"] {
+      width: 100%;
+      padding: 12px;
+      background-color: #44626b;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #7897f2;
+    }
+
+    @media (max-width: 500px) {
+      .booking-form {
+        padding: 25px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="booking-form">
+    <h2>🚖 Book Your Hourly Ride</h2>
+    <form action="#" method="POST">
+      <div class="form-group">
+        <label for="name">👤 Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">📱 Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="e.g. 9876543210" required>
+      </div>
+
+      <div class="form-group">
+        <label for="pickup">📍 Pickup Location</label>
+        <input type="text" id="pickup" name="pickup" placeholder="Enter your location" required>
+      </div>
+
+      <div class="form-group">
+        <label for="hours">⏱ Duration (in hours)</label>
+        <input type="number" id="hours" name="hours" placeholder="e.g. 2" required>
+      </div>
+
+      <button type="submit">Book Now</button>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Corporate Travel Booking</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f7f8;
+      padding: 40px;
+    }
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 15px;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background-color: #007bff;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 6px;
+      margin-top: 20px;
+      cursor: pointer;
+      width: 100%;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Corporate Travel Booking</h2>
+  <form action="#" method="POST">
+    <label>Full Name:</label>
+    <input type="text" name="name" required>
+
+    <label>Company Name:</label>
+    <input type="text" name="company" required>
+
+    <label>Email:</label>
+    <input type="email" name="email" required>
+
+    <label>Contact Number:</label>
+    <input type="tel" name="phone" required>
+
+    <label>Pickup Location:</label>
+    <input type="text" name="pickup" required>
+
+    <label>Destination:</label>
+    <input type="text" name="destination" required>
+
+    <label>Travel Date & Time:</label>
+    <input type="datetime-local" name="datetime" required>
+
+    <label>Purpose of Travel:</label>
+    <textarea name="purpose" rows="3" placeholder="e.g., Meeting, Airport transfer..." required></textarea>
+
+    <label>Additional Requirements:</label>
+    <textarea name="requirements" rows="3" placeholder="e.g., Water bottles, Wi-Fi, Newspaper, etc."></textarea>
+
+    <button type="submit">Submit Booking</button>
+  </form>
+
+</body>
+</html>

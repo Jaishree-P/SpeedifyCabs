@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Drive My Car - Booking Form</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f5f7fa;
+      padding: 40px;
+    }
+    h2 {
+      text-align: center;
+      color: #2c3e50;
+    }
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    }
+    label {
+      font-weight: 600;
+      display: block;
+      margin-top: 15px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background-color: #2980b9;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 5px;
+      margin-top: 20px;
+      cursor: pointer;
+      width: 100%;
+    }
+    button:hover {
+      background-color: #1f618d;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Drive My Car Service</h2>
+  <form action="#" method="POST">
+    <label>Your Name:</label>
+    <input type="text" name="name" required>
+
+    <label>Phone Number:</label>
+    <input type="tel" name="phone" required>
+
+    <label>Email (optional):</label>
+    <input type="email" name="email">
+
+    <label>Pickup Location:</label>
+    <input type="text" name="pickup" required>
+
+    <label>Drop Location:</label>
+    <input type="text" name="drop" required>
+
+    <label>Date & Time for Pickup:</label>
+    <input type="datetime-local" name="datetime" required>
+
+    <label>Car Details:</label>
+    <input type="text" name="car_details" placeholder="Car model, license plate, etc." required>
+
+    <label>Special Instructions:</label>
+    <textarea name="instructions" rows="3" placeholder="e.g., Handle with care, valet preferred, etc."></textarea>
+
+    <button type="submit">Submit Request</button>
+  </form>
+
+</body>
+</html>

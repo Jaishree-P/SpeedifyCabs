@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Airport Travel Booking</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #eaf4f4;
+      padding: 40px;
+    }
+    h2 {
+      text-align: center;
+      color: #2c3e50;
+    }
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 15px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background-color: #27ae60;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 6px;
+      margin-top: 20px;
+      cursor: pointer;
+      width: 100%;
+    }
+    button:hover {
+      background-color: #1e8449;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Airport Travel Booking</h2>
+  <form action="#" method="POST">
+    <label>Passenger Name:</label>
+    <input type="text" name="name" required>
+
+    <label>Phone Number:</label>
+    <input type="tel" name="phone" required>
+
+    <label>Email (optional):</label>
+    <input type="email" name="email">
+
+    <label>Pickup Location:</label>
+    <input type="text" name="pickup" required>
+
+    <label>Airport:</label>
+    <select name="airport" required>
+      <option value="">--Select Airport--</option>
+      <option value="domestic">Domestic Terminal</option>
+      <option value="international">International Terminal</option>
+    </select>
+
+    <label>Pickup Date & Time:</label>
+    <input type="datetime-local" name="pickup_datetime" required>
+
+    <label>Flight Number:</label>
+    <input type="text" name="flight_number" placeholder="e.g., AI203 or EK542">
+
+    <label>Special Instructions:</label>
+    <textarea name="instructions" rows="3" placeholder="e.g., Meet at arrivals gate, baggage assistance, etc."></textarea>
+
+    <button type="submit">Confirm Booking</button>
+  </form>
+
+</body>
+</html>
